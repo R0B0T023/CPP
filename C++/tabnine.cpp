@@ -12,5 +12,6 @@ int main()
     cin>>cali;
 
     cout<<"Tu le diste a tabnine calificacion de : "<<cali<<"\n";
+    cout<<"Vete a la verga :(\n";
     return 0;
 }
