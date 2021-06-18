@@ -32,8 +32,8 @@ void menu()
                 {
 
                     cout << "1) Ingresar" << endl;
-                    cout << "3) listar" << endl;
-                    cout << "4) Salir" << endl;
+                    cout << "2) listar" << endl;
+                    cout << "0) Salir" << endl;
                     cout << "Selecciona la opcion que desea realizar: ";
                     cin >> op;
 
@@ -67,7 +67,7 @@ void menu()
                     {
                         cout << "Fin del programa" << endl;
                     }
-                } while (op < 2);
+                } while (op < 2 && op == 0);
 
             }
             break;
@@ -116,7 +116,7 @@ void menu()
                     {
                         cout << "Fin del programa" << endl;
                     }
-                }while (op < 4);
+                }while (op < 2 && op == 0);
             }
             break;
     }
