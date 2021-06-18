@@ -3,15 +3,7 @@
 
 using namespace std;
 
-void menu();
-
 int main()
-{
-    menu();
-    return 0;
-}
-
-void menu()
 {
     int opc;
     system("clear");
@@ -66,6 +58,7 @@ void menu()
                     if (op == 0) 
                     {
                         cout << "Fin del programa" << endl;
+                        return 0;
                     }
                 } while (op < 2 && op == 0);
 
@@ -115,9 +108,11 @@ void menu()
                     if (op == 0) 
                     {
                         cout << "Fin del programa" << endl;
+                        return 0;
                     }
                 }while (op < 2);
             }
             break;
     }
+    return 0;
 }
