@@ -116,7 +116,7 @@ void menu()
                     {
                         cout << "Fin del programa" << endl;
                     }
-                }while (op < 2 && op == 0);
+                }while (op < 2);
             }
             break;
     }
