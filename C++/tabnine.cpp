@@ -13,5 +13,6 @@ int main()
 
     cout<<"Tu le diste a tabnine calificacion de : "<<cali<<"\n";
     cout<<"Vete a la verga :(\n";
+    cout<<"No es cierto\n";
     return 0;
 }
