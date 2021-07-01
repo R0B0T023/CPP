@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int opc, continuar;
+    int opc, continuar, i;
   
     do
     {  
@@ -22,18 +22,28 @@ int main()
         {
             case 1:
             {
-                system("clear");
+                system("cls");
                 cout<<"\t\tBusqueda Binaria\n\n";
                 
-                int vec[16]={2,4,5,6,8,9,9,35,47,59,77,78,98,99,123,125}; 
+                int cantidad;
+                cout<<"De cuantos espacios quieres que sea el arreglo?: ";
+                cin>>cantidad;
+                
+                int vec[cantidad]; 
                 int inf,sup,mitad,dato;
                 char band='F';
 
+				for(int i=0;i<cantidad;i++)
+				{
                 cout<<"Favor de ingresar un numero: ";
-                cin>>dato;
-
-                inf=0;
-                sup=16;
+                cin>>vec[i];
+				}
+				
+				cout<<"Dame el numero a buscar: ";
+				cin>>dato;
+                
+				inf=0;
+                sup=cantidad;
 
                 while(inf<=sup)
                 {
@@ -70,12 +80,21 @@ int main()
 
             case 2:
             {
-                int numero, i=0, pos,vec[16]={2,4,5,6,8,9,9,35,47,59,77,78,98,99,123,125};
+                int numero, i=0, pos,cantidad;
                 bool encontro=false;
                 system("clear");
                 cout<<"\t\tBusqueda Secuencial\n\n";
 
+				cout<<"De cuantos espacios quieres que sea el arreglo? :";
+				cin>>cantidad;
+				
+				int vec[cantidad];
+				for(int i=0;i<cantidad;i++)
+				{
                 cout<<"Favor de ingresar un numero: ";
+                cin>>vec[i];
+				}
+                cout<<"Favor de ingresar el numero a buscar: ";
                 cin>>numero;
 
                 while(!(encontro) && i<16)
